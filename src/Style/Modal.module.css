@@ -1,0 +1,40 @@
+.container {
+    color: #0e101c !important;
+}
+
+.addOption {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+
+.optionInput {
+    flex: 3;
+}
+
+.optionButton {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.option label {
+    line-height: 1.5;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0e101c;
+}
+
+@media screen and (max-width: 480px) {
+    .optionInput {
+        flex: 2;
+    }
+
+    .optionButton {
+        flex: none;
+        margin-left: 12px;
+    }
+
+}

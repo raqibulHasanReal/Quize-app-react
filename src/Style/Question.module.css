@@ -1,0 +1,71 @@
+.card {
+    padding: 16px;
+    border: 1px solid white;
+    color: black;
+    background: white;
+    display: flex;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+}
+
+.option {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.answerCard {
+    padding: 16px;
+    border: 1px solid white;
+    color: black;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.questionCard {
+    width: 19rem;
+    min-height: 480px;
+    margin:0 20px 20px 0;
+}
+
+.createForm {
+    margin: 200px 200px;
+}
+
+.saveButton {
+    padding: 6px 66px;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .cardWrapper{
+        width: 100%;
+    }
+
+    .questionCard{
+        width: 100%;
+        min-height: auto;
+        margin:0 20px 20px 0;
+    }
+
+    .createForm {
+        margin: 10px 10px;
+    }
+
+}
+

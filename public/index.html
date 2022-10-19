@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Quiz Strativ</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBeSTMUp7bSZez1cRWrmwGHVRWbAdsUIzs",
+        authDomain: "quiz-strativ.firebaseapp.com",
+        projectId: "quiz-strativ",
+        storageBucket: "quiz-strativ.appspot.com",
+        messagingSenderId: "1023986043660",
+        appId: "1:1023986043660:web:b7dc203d6ed3513cea5729",
+        measurementId: "G-1PQ78CJN8V"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+<!--    <script src="https://unpkg.com/idb/build/iife/index-min.js"></script>-->
+<!--    <script>-->
+<!--      (async function doDatabaseStuff() {-->
+<!--        console.log(213112123)-->
+<!--        const db = await idb.openDB('Quiz-Strativ', 1, {-->
+<!--          upgrade(db) {-->
+<!--            const question = db.createObjectStore('question', {-->
+<!--              keyPath: 'id',-->
+<!--              autoIncrement: true,-->
+<!--            });-->
+<!--            question.createIndex('question', 'question');-->
+<!--            question.createIndex('options', 'options');-->
+<!--            question.createIndex('authorName', 'authorName');-->
+<!--            question.createIndex('date', 'date');-->
+
+<!--            const answer = db.createObjectStore('answer', {-->
+<!--              keyPath: 'id',-->
+<!--              autoIncrement: true,-->
+<!--            });-->
+<!--            answer.createIndex('questionId', 'questionId');-->
+<!--            answer.createIndex('userId', 'userId');-->
+<!--            answer.createIndex('answer', 'answer');-->
+<!--            answer.createIndex('date', 'date');-->
+
+<!--            const answerHistory = db.createObjectStore('answerHistory', {-->
+<!--              keyPath: 'id',-->
+<!--              autoIncrement: true,-->
+<!--            });-->
+<!--            answerHistory.createIndex('history', 'history');-->
+<!--            answerHistory.createIndex('answerId', 'answerId');-->
+<!--            answerHistory.createIndex('questionId', 'questionId');-->
+<!--            answerHistory.createIndex('userId', 'userId');-->
+<!--            answerHistory.createIndex('userName', 'userName');-->
+<!--            answerHistory.createIndex('date', 'date');-->
+<!--          }-->
+<!--      })})();-->
+<!--    </script>-->
+  </body>
+</html>

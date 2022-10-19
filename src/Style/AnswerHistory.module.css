@@ -1,0 +1,30 @@
+.wrapper {
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+.historyList {
+    padding: 16px;
+    border: 1px solid white;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historyCard {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.correct {
+    color: green;
+    font-weight: 600;
+}
+.wrong {
+    color: red;
+    font-weight: 400;
+}
+
